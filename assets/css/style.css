@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+:root {
+    --color-one: #007BFF;
+    --color-two: #E3F2FD;
+    --color-border: #90CAF9;
+    --color-hover: #000cb1;
+}
+
+body {
+    background: #f4f4ff;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: var(--color-one);
+}
+
+::selection {
+    color: #fff;
+    background: var(--color-one);
+}
+
+.cta_btn {
+    padding: 10px 20px;
+    background: var(--color-one);
+    color: #fff;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.cta_btn:hover {
+    background: var(--color-hover);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-one);
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #FFFFFF;
+    box-shadow: 0 1px 10px #0000000c;
+}
+
+header .row {
+    width: 1440px;
+    justify-content: space-between;
+}
+
+header h3 {
+    color: var(--color-one);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+}
+
+.site_title h3 ion-icon.md.hydrated {
+    font-size: 36px;
+}
+
+header .user_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Expense Tracker */
+
+.expense_tracker {
+    padding: 50px 10px;
+    width: 100%;
+}
+.expense_tracker .row {
+    width: 1000px;
+}
+
+.expense_tracker table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 1px 10px #0000000c;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.expense_tracker th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.expense_tracker th {
+    background-color: var(--color-one);
+    color: white;
+}
+
+.expense_tracker .actionBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.expense_tracker .cta_btn {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

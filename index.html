@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- ion icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="row flex">
+            <div class="site_title">
+                <h3><ion-icon name="cash-outline"></ion-icon> Expense Tracker</h3>
+            </div>
+
+            <div class="user_data">
+                <a href="#" class="cta_btn logOutBtn">Total Expenses</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="expense_tracker flex">
+        <div class="row flex">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Expense Name</th>
+                        <th>Amount ($)</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Groceries</td>
+                        <td>$50</td>
+                        <td>Food</td>
+                        <td>18 Mar 2025</td>
+                        <td class="actionBtn">
+                            <a href="#" class="cta_btn edit"><ion-icon name="pencil"></ion-icon></a>
+                            <a href="#" class="cta_btn delete"><ion-icon name="trash"></ion-icon></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Internet Bill</td>
+                        <td>$30</td>
+                        <td>Utilities</td>
+                        <td>17 Mar 2025</td>
+                        <td class="actionBtn">
+                            <a href="#" class="cta_btn edit"><ion-icon name="pencil"></ion-icon></a>
+                            <a href="#" class="cta_btn delete"><ion-icon name="trash"></ion-icon></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Netflix</td>
+                        <td>$15</td>
+                        <td>Entertainment</td>
+                        <td>16 Mar 2025</td>
+                        <td class="actionBtn">
+                            <a href="#" class="cta_btn edit"><ion-icon name="pencil"></ion-icon></a>
+                            <a href="#" class="cta_btn delete"><ion-icon name="trash"></ion-icon></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
