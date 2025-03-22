@@ -89,44 +89,120 @@ header .user_data {
 
 /* Expense Tracker */
 
-.expense_tracker {
+.expense_table {
     padding: 50px 10px;
     width: 100%;
 }
-.expense_tracker .row {
-    width: 1000px;
+.expense_table .row {
+    width: 1200px;
 }
 
-.expense_tracker table {
+.expense_table table {
     width: 100%;
     border-collapse: collapse;
     background: white;
     box-shadow: 0 1px 10px #0000000c;
     border-radius: 10px;
     overflow: hidden;
+    table-layout: fixed;
 }
 
-.expense_tracker th, td {
+.expense_table th:nth-child(1), 
+.expense_table td:nth-child(1) {
+    width: 7%;
+    text-align: center;
+}
+
+.expense_table th, td {
     padding: 15px;
     border: 1px solid #ddd;
     text-align: left;
+    word-wrap: break-word;
 }
 
-.expense_tracker th {
+.expense_table th {
     background-color: var(--color-one);
     color: white;
 }
 
-.expense_tracker .actionBtn {
+.expense_table .actionBtn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
-.expense_tracker .cta_btn {
+.expense_table .cta_btn {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Expense Tracker Form */
+
+.expenseForm {
+    width: 100%;
+    padding: 60px 10px 30px;
+}
+
+.expenseForm .row {
+    width: 1200px;
+}
+
+.expenseForm form {
+    width: 100%;
+    gap: 20px;
+    align-items: flex-end;
+}
+.expenseForm form h3 {
+    color: var(--color-one);
+}
+.expenseForm form input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 10px #0000000c;
+    height: 45px;
+}
+
+.expenseForm form input:focus {
+    outline: 1px solid var(--color-one);
+}
+
+.expenseForm form select {
+    padding: 10px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+}
+.expenseForm form select:focus {
+    outline: 1px solid var(--color-one);
+}
+.expenseForm form select option{
+    transition: 0.3s;
+}
+.expenseForm form .formFields {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.expenseForm form button {
+    height: 45px;
+    padding: 10px 20px;
+    width: 20%;
+    background: var(--color-one);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.expenseForm form button:hover {
+    background: var(--color-hover);
 }
