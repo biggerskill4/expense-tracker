@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateTotalPrice() {
         let total = expenseData.reduce((sum, expense) => sum + parseFloat(expense.amount || 0), 0);
-        document.querySelector('#price').innerHTML = `<b>Total:</b> PKR-${total.toFixed(0)}`;
+        document.querySelector('#price').innerHTML = `<b>Total:</b> PKR ${total.toFixed(0)}`;
     }
     
 });
